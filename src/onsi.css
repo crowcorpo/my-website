@@ -1,0 +1,97 @@
+
+body{
+    background-color: rgb(145, 255, 0);
+}
+
+#l7awi1 ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;                /* Flex container */
+    justify-content: flex-start;  /* لمحاذاة العناصر من اليسار */
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+#l7awi1 li{
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-size: 0.5em;
+    float: none; /* الغاء float */
+}
+
+li:hover{
+    background-color: rgb(214, 132, 32);
+    cursor: pointer;
+}
+
+.black{
+    position: fixed;
+    height: 400px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+img{
+    width: calc(100% - 10px);
+    margin-left: 5px;
+}
+
+.boxes {
+  display: flex;          /* هذا هو المهم */
+  flex-direction: column; /* عمودي على الهاتف */
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#box1, #box2, #box3 {
+  height: 200px;
+  width: calc( 100% - 20px );
+  background-color: orangered;
+  margin-top: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex; 
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.footer h1{
+    color: white;
+    margin-left: 10px;
+}
+
+@media( min-width : 1020px ){
+
+    #l7awi1 ul{
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+    #l7awi1 li{
+    display: block;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    float: left;
+    font-size: 1em;
+} 
+    img{
+    width: 300px;
+} 
+    .boxes {
+    flex-direction: row;  /* أفقي على الحاسوب */
+  }
+
+
+}  

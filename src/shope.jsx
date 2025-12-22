@@ -194,6 +194,9 @@ function Shope() {
         
         const remove = (index) => {
             setCart(prev => prev.filter((_, i) => i !== index));
+            if(num > 0){
+                setnum(num - 1);
+            }
         };
 
         const timeref2 = useRef(null);
@@ -221,13 +224,11 @@ function Shope() {
             </div>
 
             <div ref={scrollref} id="text7awi">
+                <img id="shoplogo" src={shoplogo} />
                 <h1 className={ theme ? "white" : "" } id="cltext">Clothes</h1>
                 <h1 id="shtext">Shop</h1>
             </div>
             
-            <div id="shoplogo7awi">
-                <img id="shoplogo" src={shoplogo} />
-            </div>
 
             <div id="setting7awi"> <img onClick={bogi} id="setting" src={setting} /> </div>
 

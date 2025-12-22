@@ -1,3 +1,6 @@
+
+
+
 .bg{
     position: fixed;
     top: 0; left: 0;
@@ -6,7 +9,7 @@
     z-index: 0;
 }
 .bg img{
-    width: 100%;
+    width: 105%;
     height: 100%;
     object-fit: cover;
     filter: blur(5px); 
@@ -106,7 +109,7 @@
     justify-content: center;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgb(170, 125, 125);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.856);
 }
 
 .bgcolor{
@@ -125,7 +128,7 @@
 
 #buy{
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.863);
     border-radius: 50px;
     color: white;
     display: flex;
@@ -195,6 +198,7 @@
     font-size: 1em;
     color: rgba(255, 255, 255, 0.959);
     transform: translateY(-10px);
+    outline-color: goldenrod;
 }
 
 #contiti7awi{
@@ -287,11 +291,13 @@
 }
 
     #img7awi img{
-    width: 25%;
+    margin-top: -5vh;
+    width: 20%;
+    height: 200px;
     box-shadow: 7px 7px 10px black;
 }
     .products{
-    margin-top: calc(-3vh);
+    margin-top: calc(-8vh);
     font-size: 1.5em;
 }
 
@@ -300,7 +306,7 @@
     border: 1px solid rgba(0, 0, 0, 0.767);
     width: 5vw;
     box-shadow: 0px 0px 7px rgb(170, 125, 125);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.699);
     cursor: pointer;
 }
     #buy{
@@ -317,7 +323,7 @@
         transition: 0.2s ease-in-out;
     }
     #paydiv{
-    height: 440px;
+    height: 410px;
     width: calc(100% - 50vw);
     background-color: rgba(0, 0, 0, 0.904);
     backdrop-filter: blur(8px);
@@ -337,5 +343,96 @@
     transition: 0.6s ease-in-out;
 }
 
+    #contiti7awi{
+    height: 45px;
+    width: calc(100% - 30vw);
 }
 
+    #send{
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+}
+
+@media (min-width: 1440px){
+    #home{
+    height: 80px;
+    font-size: 2em;
+    width: 200px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 7px rgb(170, 125, 125);
+}
+
+    #img7awi img{
+    margin-top: calc(18vh);
+    width: 27%;
+    height: 400px;
+    box-shadow: 7px 7px 10px black;
+}
+
+    .products{
+    margin-top: calc(16vh);
+    font-size: 2.2em;
+}
+
+    .size h1{
+    padding: 15px;
+    width: 5vw;
+    background-color: rgba(255, 255, 255, 0.856);
+    font-size: 2.4em;
+}
+    #buy{
+    height: 75px;
+    width: calc(100% - 80vw);
+    font-size: 2em;
+}
+
+   #paydiv{
+    position: fixed; top: calc(14vh); bottom: 0;
+    height: 750px;
+    width: calc(100% - 40vw);
+    background-color: rgba(0, 0, 0, 0.904);
+    box-shadow: 0px 0px 6px rgb(178, 185, 108);
+    gap: 20px;
+}
+
+    #info{
+    font-size: 3em;
+}
+
+    #paydiv input{
+    height: 60px;
+    width: calc(100% - 20vw);
+    border-radius: 40px;
+    font-size: 1.5em;
+}
+
+    #contiti7awi{
+    height: 90px;
+    width: calc(100% - 40vw);
+    font-size: 1.8em;
+    margin-top: 4vh;
+}
+
+#contiti7awi p{
+    padding: 0 30px;
+}
+
+    
+#send{
+    margin-top: 4vh;
+    height: 75px;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 2em;
+}
+
+    #sented{
+    margin-top: 4vh;
+    font-size: 2em;
+    color: white;
+}
+
+}

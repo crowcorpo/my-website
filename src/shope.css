@@ -59,6 +59,7 @@ body{
     user-select: none;
     background-color: rgb(241, 239, 239);
     border: 1px solid black;
+    z-index: 5;
 }
 
 #text7awi ,#setting7awi{

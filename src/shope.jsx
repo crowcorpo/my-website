@@ -24,6 +24,7 @@ import corpo from "./assets/corpo.png";
 import crismas from "./assets/crismas.png";
 
 
+
 function Shope() {
 
     const [ slide , setslide ] = useState(false);
